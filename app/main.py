@@ -22,7 +22,7 @@ async def lifespan(app: FastAPI):
     # Startup
     print("Starting Clinical RAG API...")
     settings = get_settings()
-    
+
     try:
         service = init_rag_service(settings)
         entity_count = service.collection.num_entities if service.collection else 0
@@ -31,9 +31,9 @@ async def lifespan(app: FastAPI):
     except Exception as e:
         print(f"⚠️ Startup warning: {e}")
         print("   API will start but some features may be unavailable.")
-    
+
     yield
-    
+
     # Shutdown
     print("Shutting down Clinical RAG API...")
 
@@ -57,7 +57,7 @@ Query patient medical records using Retrieval-Augmented Generation.
 - **Generation**: Google Gemini 2.5 Flash
     """,
     version="1.0.0",
-    lifespan=lifespan
+    lifespan=lifespan,
 )
 
 # CORS middleware (configure for your needs)
@@ -81,5 +81,5 @@ async def root():
         "service": "Clinical RAG API",
         "version": "1.0.0",
         "docs": "/docs",
-        "health": "/health"
+        "health": "/health",
     }
