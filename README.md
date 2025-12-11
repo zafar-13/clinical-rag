@@ -8,10 +8,10 @@ A production-ready FastAPI service for querying patient medical records using Re
 ┌─────────────────────────────────────────────────────────────┐
 │                      FastAPI Server                         │
 ├─────────────────────────────────────────────────────────────┤
-│  POST /api/v1/query         →  RAG Pipeline                 │
-│  POST /api/v1/ingest/pdf    →  PDF Ingestion                │
-│  POST /api/v1/ingest/text   →  Text Ingestion               │
-│  GET  /api/v1/health        →  Health Check                 │
+│  POST /api/query         →  RAG Pipeline                    │
+│  POST /api/ingest/pdf    →  PDF Ingestion                   │
+│  POST /api/ingest/text   →  Text Ingestion                  │
+│  GET  /api/health        →  Health Check                    │
 └─────────────────────────────────────────────────────────────┘
                               │
         ┌─────────────────────┴─────────────────────┐
@@ -63,7 +63,7 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000 --workers 4
 
 - **Swagger UI**: http://localhost:8000/docs
 - **ReDoc**: http://localhost:8000/redoc
-- **Health Check**: http://localhost:8000/api/v1/health
+- **Health Check**: http://localhost:8000/api/health
 
 ## API Endpoints
 
