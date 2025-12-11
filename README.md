@@ -165,3 +165,6 @@ gcloud run deploy clinical-rag-api \
 
 ## CI/CD Status
 ![CI](https://github.com/zafar-13/clinical-rag/actions/workflows/ci-cd.yml/badge.svg)
+
+## CI Status
+![CI](https://github.com/zafar-13/clinical-rag/actions/workflows/ci-cd.yml/badge.svg)
