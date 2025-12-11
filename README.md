@@ -9,9 +9,9 @@ A production-ready FastAPI service for querying patient medical records using Re
 │                      FastAPI Server                         │
 ├─────────────────────────────────────────────────────────────┤
 │  POST /api/v1/query         →  RAG Pipeline                 │
-│  POST /api/v1/ingest/pdf    →  PDF Ingestion               │
-│  POST /api/v1/ingest/text   →  Text Ingestion              │
-│  GET  /api/v1/health        →  Health Check                │
+│  POST /api/v1/ingest/pdf    →  PDF Ingestion                │
+│  POST /api/v1/ingest/text   →  Text Ingestion               │
+│  GET  /api/v1/health        →  Health Check                 │
 └─────────────────────────────────────────────────────────────┘
                               │
         ┌─────────────────────┴─────────────────────┐
