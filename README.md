@@ -162,3 +162,6 @@ gcloud run deploy clinical-rag-api \
 - Use GCP Secret Manager for credentials (already implemented)
 - Consider adding authentication (API keys, OAuth, etc.)
 - Enable HTTPS in production deployments
+
+## CI/CD Status
+![CI](https://github.com/zafar-13/clinical-rag/actions/workflows/ci-cd.yml/badge.svg)
