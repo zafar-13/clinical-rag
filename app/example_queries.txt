@@ -1,0 +1,24 @@
+Diagnosis & History:
+{"question": "What is the patient's primary diagnosis?", "top_k": 3}
+{"question": "What is the patient's past medical history?", "top_k": 3}
+{"question": "Why was the patient admitted to the hospital?", "top_k": 3}
+
+Patient Demographics:
+{"question": "What is the patient's name and age?", "top_k": 2}
+{"question": "What symptoms did the patient present with?", "top_k": 3}
+
+Medications & Treatment:
+{"question": "What medications is the patient currently taking?", "top_k": 3}
+{"question": "What treatment plan was recommended?", "top_k": 3}
+
+Clinical Findings:
+{"question": "What were the lab results?", "top_k": 3}
+{"question": "What did the ECG or cardiac tests show?", "top_k": 3}
+{"question": "Does the patient have any allergies?", "top_k": 2}
+
+Lifestyle & Risk Factors:
+{"question": "Does the patient smoke or drink alcohol?", "top_k": 2}
+{"question": "What are the patient's risk factors for heart disease?", "top_k": 3}
+
+Edge Case (Testing "Not Found"):
+{"question": "What is the patient's insurance provider?", "top_k": 3}
